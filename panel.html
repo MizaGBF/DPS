@@ -1,0 +1,53 @@
+<body>
+    <link rel="stylesheet" href="panel.css">
+    <script src="panel.js"></script>
+    <h2>Combat Tracker <small>rev.6</small></h2>
+    <div id="control">
+        <button id="startstop">Start</button>
+        <button id="reset">Reset</button>
+        <button id="copy">Copy Summary</button>
+        <button id="save">Export Summary</button>
+        <button id="copyLog">Copy Log</button>
+        <button id="saveLog">Export Log</button>
+        <button id="showTurns">Show Turns</button>
+    </div>
+    <div id="data">
+    </div>
+    <div id="turns">
+    </div>
+    <template class="turn-row">
+        <quad>
+            <value-display label="Turn #" key="turn">0</value-display>
+            <value-display label="Attacks" key="attacks">0</value-display>
+            <value-display label="CAs" key="charge_attacks">0</value-display>
+            <value-display label="Damage" key="total_damage">0</value-display>
+        </quad>
+    </template>
+    <template class="data-row">
+        <value-display label="Damage" key="total_damage">0</value-display>
+        <value-display label="Damage/turn" key="avg_damage">0</value-display>
+        <duo>
+            <value-display label="Attacks" key="num_attacks">0</value-display>
+            <value-display label="/turn" key="avg_attacks">0</value-display>
+        </duo>
+        <quad>
+            <value-display label="SA" key="num_single_attacks">0</value-display>
+            <value-display label="DA" key="num_double_attacks">0</value-display>
+            <value-display label="TA+" key="num_triple_or_more_attacks">0</value-display>
+            <value-display label="CA" key="num_charge_attacks">0</value-display>
+        </quad>
+        <duo>
+            <value-display label="Critical" key="num_criticals">0</value-display>
+            <value-display label="Rate" key="critical_rate">0%</value-display>
+        </duo>
+        <value-display label="CA Damage" key="total_ca_damage">0</value-display>
+        <value-display label="Damage/CA" key="avg_ca_damage">0</value-display>
+        <value-display label="Skill Damage" key="total_skill_damage">0</value-display>
+        <duo>
+            <value-display label="Echo" key="total_echo_damage">0</value-display>
+            <value-display label="Heal" key="total_healing">0</value-display>
+        </duo>
+    </template>
+    <h3>Please Start a fight or Refresh your current fight to initialize the party.</br>Press Reset before starting another fight.</h3>
+    <h3><small>Link (Right Click Å® Copy) : <a href="https://drive.google.com/file/d/1osEjihq-ZeQS9B3oSwf8q7jLc_XWtYJl/view?usp=sharing">Latest version</a></small></h3>
+</body>

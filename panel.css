@@ -1,0 +1,134 @@
+﻿body {
+    background-color: black;
+    font-size: 75%;
+    color: #EEEEEE;
+    line-height: 1.5;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    overflow-x: hidden;
+}
+
+body, value-display::before, value-display {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important ;
+}
+
+template {
+    display: none !important;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: #C0C0C0;
+    line-height: 1;
+    border-bottom: 1px solid #222222;
+}
+
+h2 small {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+button {
+    background-color: #111111;
+    color: #DDDDDD;
+    border-radius: 4px;
+    border: 1.5px solid #DDDDDD;
+    margin-right: 4px;
+    font-size: 14px;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    background-color: #333333;
+}
+
+.data-row {
+    margin-top: 2px;
+    border-top: 1px solid #444444;
+    /* border-bottom: 1px solid #444444; */
+    width: 100%;
+    display: block;
+    column-count: 2;
+    max-width: 700px;
+}
+
+.data-row::before {
+    content: attr(data-name);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(to bottom right, #444444 10%, #000000 55%);
+    padding-right: 8px;
+    padding-bottom: 4px;
+    min-width: 120px;
+    float: left;
+    clear: both;
+}
+
+value-display, triad, duo, quad {
+    float: left;
+    clear: both;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-feature-settings: "tnum";
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+    margin-left: 4px;
+    margin-top: 2px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, rgb(0, 10, 18) 5%, #000000 45%);
+}
+
+duo {
+    column-count: 2;
+}
+
+triad {
+    column-count: 3;
+}
+
+quad {
+    column-count: 4;
+}
+
+duo value-display, triad value-display, quad value-display {
+    margin: 0px;
+    padding: 0px;
+}
+
+value-display::before {
+    position: absolute;
+    left: 0px;
+    color: rgb(180, 190, 200);
+    content: attr(label);
+    padding-right: 6px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div#turns {
+    display: none;
+    margin-top: 14px;
+    border-style: solid;
+    border-color: #222222;
+    border-width: 0px;
+    border-top-width: 1px;
+    min-height: 2px;
+}
+
+div#turns.show {
+    display: block;
+}
