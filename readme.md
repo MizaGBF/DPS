@@ -4,7 +4,7 @@
 * Read-Only, doesn't modify any game code. It just reads your network traffic in battle.  
 * Include lot of fixes and upgrades over the vanilla version.  
 #### Installation  
-* Go to [Chrome Extension Menu](chrome://extensions) and enable `Developper Mode` on the top right.  
+* Go to the Chrome Extension Menu at `chrome://extensions` and enable `Developper Mode` on the top right.  
 * Click on `Load Unpacked` and select the extension folder.  
 * The extension is ready to use.  
 #### Usage  
